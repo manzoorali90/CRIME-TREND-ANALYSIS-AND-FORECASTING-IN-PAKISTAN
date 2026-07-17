@@ -39,7 +39,7 @@ This project analyzes month-wise crime data across Pakistan (2022–2024) to unc
 - K-means clustering grouped crime categories into three distinct behavioral clusters
 - "Miscellaneous" and "Other Theft" dominate total case volume, while violent crimes (Murder, Kidnapping) show steadier, more predictable seasonal patterns
 
-## 📁 Repository Structure
+
 ## 📁 Repository Structure
 
 ```
