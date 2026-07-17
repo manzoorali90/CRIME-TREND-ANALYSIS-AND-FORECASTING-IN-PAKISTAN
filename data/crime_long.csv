@@ -1,0 +1,349 @@
+Year,Month,Category,Cases
+2022,January,Murder,612
+2022,February,Murder,630
+2022,March,Murder,795
+2022,April,Murder,841
+2022,May,Murder,962
+2022,June,Murder,879
+2022,July,Murder,995
+2022,August,Murder,1101
+2022,September,Murder,885
+2022,October,Murder,879
+2022,November,Murder,719
+2022,December,Murder,780
+2022,January,Attempted Murder,938
+2022,February,Attempted Murder,920
+2022,March,Attempted Murder,1158
+2022,April,Attempted Murder,1254
+2022,May,Attempted Murder,1598
+2022,June,Attempted Murder,1324
+2022,July,Attempted Murder,1433
+2022,August,Attempted Murder,1589
+2022,September,Attempted Murder,1315
+2022,October,Attempted Murder,1256
+2022,November,Attempted Murder,1096
+2022,December,Attempted Murder,1144
+2022,January,Kidnapping/Abduction,2129
+2022,February,Kidnapping/Abduction,2067
+2022,March,Kidnapping/Abduction,2672
+2022,April,Kidnapping/Abduction,2197
+2022,May,Kidnapping/Abduction,2942
+2022,June,Kidnapping/Abduction,2815
+2022,July,Kidnapping/Abduction,2405
+2022,August,Kidnapping/Abduction,2649
+2022,September,Kidnapping/Abduction,2407
+2022,October,Kidnapping/Abduction,2162
+2022,November,Kidnapping/Abduction,1743
+2022,December,Kidnapping/Abduction,1850
+2022,January,Dacoity,92
+2022,February,Dacoity,115
+2022,March,Dacoity,193
+2022,April,Dacoity,111
+2022,May,Dacoity,85
+2022,June,Dacoity,161
+2022,July,Dacoity,84
+2022,August,Dacoity,129
+2022,September,Dacoity,102
+2022,October,Dacoity,118
+2022,November,Dacoity,83
+2022,December,Dacoity,97
+2022,January,Robbery,3455
+2022,February,Robbery,3390
+2022,March,Robbery,4252
+2022,April,Robbery,2886
+2022,May,Robbery,3128
+2022,June,Robbery,3742
+2022,July,Robbery,3332
+2022,August,Robbery,3103
+2022,September,Robbery,3290
+2022,October,Robbery,3379
+2022,November,Robbery,3230
+2022,December,Robbery,3134
+2022,January,Burglary,514
+2022,February,Burglary,2416
+2022,March,Burglary,2514
+2022,April,Burglary,1469
+2022,May,Burglary,1975
+2022,June,Burglary,2086
+2022,July,Burglary,2208
+2022,August,Burglary,2315
+2022,September,Burglary,2241
+2022,October,Burglary,1885
+2022,November,Burglary,1759
+2022,December,Burglary,1970
+2022,January,Cattle theft,1340
+2022,February,Cattle theft,1168
+2022,March,Cattle theft,1098
+2022,April,Cattle theft,959
+2022,May,Cattle theft,956
+2022,June,Cattle theft,1294
+2022,July,Cattle theft,1236
+2022,August,Cattle theft,1074
+2022,September,Cattle theft,1053
+2022,October,Cattle theft,1038
+2022,November,Cattle theft,905
+2022,December,Cattle theft,1010
+2022,January,Other theft,12570
+2022,February,Other theft,12051
+2022,March,Other theft,12818
+2022,April,Other theft,900
+2022,May,Other theft,11596
+2022,June,Other theft,13296
+2022,July,Other theft,13089
+2022,August,Other theft,14965
+2022,September,Other theft,15590
+2022,October,Other theft,14111
+2022,November,Other theft,13011
+2022,December,Other theft,12819
+2022,January,Miscellaneous,66058
+2022,February,Miscellaneous,61540
+2022,March,Miscellaneous,75962
+2022,April,Miscellaneous,72502
+2022,May,Miscellaneous,71675
+2022,June,Miscellaneous,72924
+2022,July,Miscellaneous,67578
+2022,August,Miscellaneous,72184
+2022,September,Miscellaneous,71823
+2022,October,Miscellaneous,73294
+2022,November,Miscellaneous,66472
+2022,December,Miscellaneous,69674
+2023,January,Murder,729
+2023,February,Murder,819
+2023,March,Murder,898
+2023,April,Murder,926
+2023,May,Murder,1059
+2023,June,Murder,1056
+2023,July,Murder,1035
+2023,August,Murder,986
+2023,September,Murder,1004
+2023,October,Murder,887
+2023,November,Murder,779
+2023,December,Murder,693
+2023,January,Attempted Murder,1092
+2023,February,Attempted Murder,1161
+2023,March,Attempted Murder,1393
+2023,April,Attempted Murder,1586
+2023,May,Attempted Murder,1507
+2023,June,Attempted Murder,1527
+2023,July,Attempted Murder,1585
+2023,August,Attempted Murder,1618
+2023,September,Attempted Murder,1422
+2023,October,Attempted Murder,1284
+2023,November,Attempted Murder,1239
+2023,December,Attempted Murder,1161
+2023,January,Kidnapping/Abduction,1975
+2023,February,Kidnapping/Abduction,2319
+2023,March,Kidnapping/Abduction,2548
+2023,April,Kidnapping/Abduction,2240
+2023,May,Kidnapping/Abduction,3159
+2023,June,Kidnapping/Abduction,2733
+2023,July,Kidnapping/Abduction,2763
+2023,August,Kidnapping/Abduction,3054
+2023,September,Kidnapping/Abduction,2600
+2023,October,Kidnapping/Abduction,2561
+2023,November,Kidnapping/Abduction,2272
+2023,December,Kidnapping/Abduction,2311
+2023,January,Dacoity,111
+2023,February,Dacoity,149
+2023,March,Dacoity,96
+2023,April,Dacoity,171
+2023,May,Dacoity,195
+2023,June,Dacoity,165
+2023,July,Dacoity,104
+2023,August,Dacoity,152
+2023,September,Dacoity,137
+2023,October,Dacoity,167
+2023,November,Dacoity,131
+2023,December,Dacoity,75
+2023,January,Robbery,2564
+2023,February,Robbery,8227
+2023,March,Robbery,8023
+2023,April,Robbery,6575
+2023,May,Robbery,8597
+2023,June,Robbery,7155
+2023,July,Robbery,6788
+2023,August,Robbery,7043
+2023,September,Robbery,6197
+2023,October,Robbery,6580
+2023,November,Robbery,5598
+2023,December,Robbery,5565
+2023,January,Burglary,2412
+2023,February,Burglary,4401
+2023,March,Burglary,3850
+2023,April,Burglary,2633
+2023,May,Burglary,3622
+2023,June,Burglary,3279
+2023,July,Burglary,3485
+2023,August,Burglary,3695
+2023,September,Burglary,3074
+2023,October,Burglary,3053
+2023,November,Burglary,2970
+2023,December,Burglary,3319
+2023,January,Cattle theft,1149
+2023,February,Cattle theft,3206
+2023,March,Cattle theft,2313
+2023,April,Cattle theft,1683
+2023,May,Cattle theft,2195
+2023,June,Cattle theft,2392
+2023,July,Cattle theft,1322
+2023,August,Cattle theft,1683
+2023,September,Cattle theft,1564
+2023,October,Cattle theft,1798
+2023,November,Cattle theft,1660
+2023,December,Cattle theft,1925
+2023,January,Other theft,14266
+2023,February,Other theft,27796
+2023,March,Other theft,23834
+2023,April,Other theft,19314
+2023,May,Other theft,22027
+2023,June,Other theft,19928
+2023,July,Other theft,19910
+2023,August,Other theft,24894
+2023,September,Other theft,22558
+2023,October,Other theft,22340
+2023,November,Other theft,19462
+2023,December,Other theft,23166
+2023,January,Miscellaneous,62542
+2023,February,Miscellaneous,80336
+2023,March,Miscellaneous,75190
+2023,April,Miscellaneous,70077
+2023,May,Miscellaneous,75986
+2023,June,Miscellaneous,75073
+2023,July,Miscellaneous,66804
+2023,August,Miscellaneous,83569
+2023,September,Miscellaneous,104210
+2023,October,Miscellaneous,92605
+2023,November,Miscellaneous,106380
+2023,December,Miscellaneous,113709
+2024,January,Murder,718
+2024,February,Murder,775
+2024,March,Murder,886
+2024,April,Murder,967
+2024,May,Murder,1082
+2024,June,Murder,1088
+2024,July,Murder,1059
+2024,August,Murder,1024
+2024,September,Murder,991
+2024,October,Murder,906
+2024,November,Murder,748
+2024,December,Murder,830
+2024,January,Attempted Murder,1084
+2024,February,Attempted Murder,1161
+2024,March,Attempted Murder,1348
+2024,April,Attempted Murder,1372
+2024,May,Attempted Murder,1701
+2024,June,Attempted Murder,1697
+2024,July,Attempted Murder,1646
+2024,August,Attempted Murder,1548
+2024,September,Attempted Murder,1497
+2024,October,Attempted Murder,1442
+2024,November,Attempted Murder,1286
+2024,December,Attempted Murder,1268
+2024,January,Rape,253
+2024,February,Rape,292
+2024,March,Rape,383
+2024,April,Rape,222
+2024,May,Rape,552
+2024,June,Rape,498
+2024,July,Rape,584
+2024,August,Rape,292
+2024,September,Rape,377
+2024,October,Rape,464
+2024,November,Rape,224
+2024,December,Rape,331
+2024,January,Gang Rape,48
+2024,February,Gang Rape,60
+2024,March,Gang Rape,71
+2024,April,Gang Rape,323
+2024,May,Gang Rape,103
+2024,June,Gang Rape,87
+2024,July,Gang Rape,140
+2024,August,Gang Rape,474
+2024,September,Gang Rape,368
+2024,October,Gang Rape,87
+2024,November,Gang Rape,292
+2024,December,Gang Rape,89
+2024,January,Kidnapping/Abduction,2480
+2024,February,Kidnapping/Abduction,2265
+2024,March,Kidnapping/Abduction,2702
+2024,April,Kidnapping/Abduction,2792
+2024,May,Kidnapping/Abduction,3458
+2024,June,Kidnapping/Abduction,3170
+2024,July,Kidnapping/Abduction,3508
+2024,August,Kidnapping/Abduction,3462
+2024,September,Kidnapping/Abduction,2316
+2024,October,Kidnapping/Abduction,3142
+2024,November,Kidnapping/Abduction,2632
+2024,December,Kidnapping/Abduction,2761
+2024,January,Dacoity,130
+2024,February,Dacoity,113
+2024,March,Dacoity,122
+2024,April,Dacoity,124
+2024,May,Dacoity,132
+2024,June,Dacoity,114
+2024,July,Dacoity,104
+2024,August,Dacoity,110
+2024,September,Dacoity,138
+2024,October,Dacoity,89
+2024,November,Dacoity,80
+2024,December,Dacoity,89
+2024,January,Robbery,6856
+2024,February,Robbery,6037
+2024,March,Robbery,6060
+2024,April,Robbery,5529
+2024,May,Robbery,6616
+2024,June,Robbery,6456
+2024,July,Robbery,6668
+2024,August,Robbery,7040
+2024,September,Robbery,5854
+2024,October,Robbery,5803
+2024,November,Robbery,5043
+2024,December,Robbery,4993
+2024,January,Burglary,4128
+2024,February,Burglary,3214
+2024,March,Burglary,3044
+2024,April,Burglary,3055
+2024,May,Burglary,3018
+2024,June,Burglary,3080
+2024,July,Burglary,3400
+2024,August,Burglary,3774
+2024,September,Burglary,3163
+2024,October,Burglary,3230
+2024,November,Burglary,3635
+2024,December,Burglary,3234
+2024,January,Cattle theft,2210
+2024,February,Cattle theft,1721
+2024,March,Cattle theft,2037
+2024,April,Cattle theft,1724
+2024,May,Cattle theft,2176
+2024,June,Cattle theft,2176
+2024,July,Cattle theft,1672
+2024,August,Cattle theft,2175
+2024,September,Cattle theft,1599
+2024,October,Cattle theft,2316
+2024,November,Cattle theft,2163
+2024,December,Cattle theft,1988
+2024,January,Other theft,22988
+2024,February,Other theft,19722
+2024,March,Other theft,21769
+2024,April,Other theft,18934
+2024,May,Other theft,21205
+2024,June,Other theft,19916
+2024,July,Other theft,23709
+2024,August,Other theft,26647
+2024,September,Other theft,23286
+2024,October,Other theft,23357
+2024,November,Other theft,21050
+2024,December,Other theft,20623
+2024,January,Miscellaneous,87404
+2024,February,Miscellaneous,67475
+2024,March,Miscellaneous,92192
+2024,April,Miscellaneous,79561
+2024,May,Miscellaneous,88924
+2024,June,Miscellaneous,88470
+2024,July,Miscellaneous,68847
+2024,August,Miscellaneous,99332
+2024,September,Miscellaneous,97294
+2024,October,Miscellaneous,95376
+2024,November,Miscellaneous,88227
+2024,December,Miscellaneous,87272
