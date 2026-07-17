@@ -1,0 +1,146 @@
+---
+title: "Crime Trend Analysis and Forecasting in Pakistan"
+subtitle: "A Statistical and Machine Learning Approach Using R"
+author: "Manzoor Ali"
+date: "`r format(Sys.Date(), '%B %Y')`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+  word_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, fig.align = "center")
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(forecast)
+```
+
+# 1. Introduction
+
+Rising and shifting crime patterns present a major challenge for policymakers
+and law-enforcement resource planning in Pakistan. This project analyzes
+month-wise national crime data (2022-2024, sourced from the Ministry of
+Interior's National Police Bureau) across 11 crime categories, applying a
+full statistical and machine learning pipeline in R: data cleaning,
+exploratory analysis, statistical testing, regression, clustering, time
+series decomposition, and ARIMA/ETS forecasting.
+
+# 2. Data
+
+```{r load-data}
+crime      <- read.csv("data/crime_transformed.csv", stringsAsFactors = FALSE)
+monthly    <- read.csv("data/monthly_total.csv", stringsAsFactors = FALSE)
+desc_stats <- read.csv("data/descriptive_stats.csv", stringsAsFactors = FALSE)
+```
+
+The cleaned dataset covers `r length(unique(crime$Category))` crime
+categories over `r nrow(monthly)` months (January 2022 - December 2024).
+Note: "Rape" and "Gang Rape" appear as distinct police-reported categories
+only from 2024 onward, reflecting a change in reporting scope rather than
+missing data in prior years.
+
+# 3. Exploratory Data Analysis
+
+Total reported crime rose from **1,119,817** cases in 2022 to **1,467,205**
+in 2023 and **1,511,238** in 2024 - a **~35% increase** over the two years
+following 2022. Seasonal peaks recur around **March** and **August-September**
+each year, while **January/February** tend to show relative troughs.
+
+![Total Monthly Crime Trend](figures/01_total_trend.png)
+
+![Seasonality by Calendar Month](figures/05_month_boxplot.png)
+
+"Miscellaneous" and "Other Theft" dominate total case volume, while violent
+crimes (Murder, Kidnapping/Abduction) show smaller but steadily rising counts.
+
+![Category Totals](figures/03_category_totals.png)
+
+# 4. Statistical Analysis
+
+```{r desc-stats}
+knitr::kable(desc_stats, digits = 1)
+```
+
+A one-way ANOVA of monthly case counts against **Year** and against
+**calendar Month** was used to test whether year-level and seasonal effects
+are statistically significant; correlation analysis shows property crimes
+(Robbery, Burglary, Other Theft) move closely together (r > 0.8), while
+violent crimes form a separate correlated cluster.
+
+![Correlation Heatmap](figures/09_correlation_heatmap.png)
+
+# 5. Regression Analysis
+
+A linear trend model (`Cases ~ TimeIndex`) estimates the average month-on-month
+increase in total crime, and an extended model adds calendar-month dummies to
+capture seasonality. See `scripts/06_regression_analysis.R` and
+`data/regression_summary.txt` for full model output and coefficients.
+
+![Regression Fit](figures/30_regression_fit.png)
+
+# 6. Clustering
+
+K-means clustering (k = 3, selected via the elbow method) was applied to the
+standardized monthly profiles of each crime category, grouping categories by
+similarity in scale and seasonal behavior rather than raw volume.
+
+![Cluster Visualization](figures/18_cluster_pca.png)
+
+Three clusters emerge: (1) low-to-moderate volume violent/property crimes
+that move together, (2) "Other Theft" as a high-volume outlier, and
+(3) "Miscellaneous" as the largest, most distinct category.
+
+# 7. Time Series Analysis
+
+Seasonal decomposition separates the series into trend, seasonal, and
+residual components. An Augmented Dickey-Fuller test on the raw series
+was not significant at the 5% level, but the **first-differenced** series
+is stationary (p < 0.001), justifying an ARIMA(p,1,q) specification.
+
+![Seasonal Decomposition](figures/10_decomposition.png)
+
+# 8. Forecasting (ARIMA & ETS)
+
+Both models were fit on data through June 2024 and evaluated on the
+remaining 6 held-out months.
+
+```{r forecast-accuracy}
+comparison <- read.csv("data/forecast_accuracy_comparison.csv")
+knitr::kable(comparison, digits = 2)
+```
+
+**ARIMA outperformed ETS** on the holdout set (lower RMSE and MAPE),
+so the final 6-month-ahead forecast uses the ARIMA specification refit
+on the full 2022-2024 series.
+
+![ARIMA Forecast](figures/21_arima_forecast.png)
+![ETS Forecast](figures/22_ets_forecast.png)
+
+```{r future-forecast}
+future <- read.csv("data/future_forecast_6months.csv")
+knitr::kable(future, digits = 0)
+```
+
+# 9. Conclusion
+
+Total reported crime in Pakistan trended upward over 2022-2024 with
+consistent seasonal peaks in March and August-September. Property crimes
+(Robbery, Burglary, Other Theft) are highly correlated and cluster together,
+suggesting shared underlying drivers, while violent crime categories show
+steadier, more predictable patterns. ARIMA(0,1,1)-family models provide the
+most accurate short-term forecasts, projecting continued elevated crime
+levels over the next 6 months, useful for law-enforcement resource planning
+and seasonal deployment decisions.
+
+# 10. Limitations
+
+- Only 36 monthly observations limits the precision of seasonal ARIMA/ETS
+  estimation; longer historical data would improve forecast reliability.
+- "Rape" and "Gang Rape" are only available from 2024, preventing full
+  3-year trend analysis for those categories.
+- Data reflects **reported** cases only, not actual crime incidence.
