@@ -40,3 +40,24 @@ This project analyzes month-wise crime data across Pakistan (2022–2024) to unc
 - "Miscellaneous" and "Other Theft" dominate total case volume, while violent crimes (Murder, Kidnapping) show steadier, more predictable seasonal patterns
 
 ## 📁 Repository Structure
+## 📁 Repository Structure
+
+```
+CRIME-TREND-ANALYSIS-AND-FORECASTING-IN-PAKISTAN/
+├── scripts/                          # R scripts, one per project phase
+│   ├── 01_data_import.R
+│   ├── 02_data_cleaning.R
+│   ├── 03_data_transformation.R
+│   ├── 04_eda.R
+│   ├── 05_statistical_analysis.R
+│   ├── 06_regression_analysis.R
+│   ├── 07_clustering.R
+│   ├── 08_time_series_analysis.R
+│   ├── 09_forecasting.R
+│   └── 10_report.Rmd                 # R Markdown source for the final report
+├── figures/                          # 20+ exported charts (EDA, regression, clustering, forecasts)
+├── data/                             # raw and cleaned datasets (CSV)
+├── CRIME TREND ANALYSIS AND FORECASTING IN PAKISTAN.pdf   # full written report
+├── Moth-wise-Crime-data.xlsx         # original raw data (Ministry of Interior)
+└── README.md
+```
